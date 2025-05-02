@@ -1,0 +1,12 @@
+Opis:
+W tym zadaniu stworzysz swoją pierwszą solucję z aplikacją konsolową.
+
+Wymagania:
+- Stwórz nową solucję o nazwie TraningMaster z apkilkacją consolową 
+- Zmień wypis na ekran na "Jestem Gotowa!" -> Opdal program
+
+Podpowiedzi:
+- Wykorzystaj istniejący template w Visual Studio (Console Aplication)
+
+TODO:
+- jeśli nie wiesz czym jest solucja - przeczytaj definicje

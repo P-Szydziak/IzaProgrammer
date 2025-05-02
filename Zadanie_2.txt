@@ -1,0 +1,15 @@
+Opis:
+To powstaje Twoja pierwsza lista ćwiczeń i nauczysz się ją wypisywać na ekran.
+
+Wymagania:
+- Stwórz listę z ćwiczeniami i wypisz ją na ekran
+
+Podpowiedzi:
+- ćwiczenia mają być HARD CODED w apkilkacji
+- Wykorzystaj pętlę
+
+TODO:
+- jeśli nie wiesz co to znaczy HARD CODED - przeczytaj o tym (nie za dużo)
+
+ps. W taki sposób będę w stanie wprowadzać nowe zagadnienia powoli, 
+    abyś była w stanie rozumieć żargon programistów i niczym agent wblendować się w otoczenie.

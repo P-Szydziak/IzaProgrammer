@@ -1,0 +1,11 @@
+Opis:
+Czas na interakcje z użytkownikiem.
+Teraz listę ćwiczeni dostaniemy od użytkownika.
+
+Wymagania:
+- Dodaj polecenia czytelne dla użytkownika Console.WriteLine("...")
+- Pobieraj od użytkowniaka nazwę ćwiczenia i dodawaj ja do listy Console.ReadLine()
+- Gdy user wpisze exit skącz wprawadzanie ćwiczeń i wypisz je tak jak w zadaniu 3
+
+Podpowiedzi:
+- Można to wykonać na wiele sposobów, jednak ja bym się tutaj pochylił nad pradawną techniką mistrzów while 

@@ -1,0 +1,12 @@
+Opis:
+Czas na trochę alfabetu i sortowania. 
+Wypisz na ekran listę posortowaną na 3 sposoby. 
+- od a do z
+- od z do a
+- od najkrótszej nazywy do najdłuższej
+
+Podpowiedzi:
+- zapytaj w google C# sortowanie listy
+- do sotatniego przyda się umiejętność sprawdzenia długości ciągu znaków
+
+ps. Nie czytaj o typach sortowania itp. Na ten moment niech to zostanie dalej czarną skrzynką, którą kiedyś otworzymy.
