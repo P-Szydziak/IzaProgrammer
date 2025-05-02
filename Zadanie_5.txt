@@ -1,0 +1,23 @@
+Opis:
+Nazwy ćwiczeń to trochę mało. 
+Rozbuduj ćwiczenia, aby posiadało jeszcze informacje na temat ćwiczonej parti mięśniowej.
+
+Wymagania:
+- Wypisz partie jakie mogą być treonowane 
+    np. 1 Plecy, 2 Nogi ... 
+- Użytkownik powinien podawać {nazwa};{number_partii}
+- wypisz na ekran w podany sposób
+{partia_1}
+- {partia_1_ćwiczenie_1}
+- {partia_1_ćwiczenie_2}
+{partia_2}
+- {partia_2_ćwiczenie_1}
+- {partia_2_ćwiczenie_2}
+{partia_3}
+{partia_4}
+
+Podpowiedzi:
+- To czas na zabawy z klasami i enumem
+- Parsowanie stringów też się przyda
+
+ps. Pewnie nie wiesz co to znaczy parsowanie, więc musisz doczytać. 
