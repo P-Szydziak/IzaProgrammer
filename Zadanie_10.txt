@@ -1,0 +1,37 @@
+10 zadanie to jak rocznica. 
+Wciąż nie wiele, ale zawsze coś. 
+Takie Twoje cynkowe lub aluminiowe gody z programowaniem. 
+
+Tu pojawia się trochę ciekawsze zadanie. 
+Pobawimy się w modelowanie danych.
+
+Tutaj pojawia się biznes i daje Ci zadanie.
+Już nie jest one tak techniczne, bo pisał je PM Bartek, który nie wie za dużo o programowaniu uppsss
+
+Opis:
+Studio fitness "AktywnaForma" chce stworzyć cyfrową bibliotekę ćwiczeń, której trenerzy będą mogli używać podczas planowania treningów dla swoich klientów. Każde ćwiczenie powinno mieć wszystkie niezbędne informacje, aby trener mógł łatwo dobrać odpowiednie ćwiczenia do poziomu zaawansowania klienta i konkretnej grupy mięśniowej.
+Wymagania:
+
+Każde ćwiczenie musi mieć unikalny identyfikator
+Każde ćwiczenie musi mieć nazwę (np. "wyciskanie sztangi", "przysiady")
+Każde ćwiczenie musi mieć dokładny opis techniki wykonania
+Każde ćwiczenie musi określać, którą grupę mięśniową angażuje (np. klatka piersiowa, nogi, plecy)
+Dla każdego ćwiczenia należy określić zalecaną liczbę serii
+Dla każdego ćwiczenia należy określić zalecaną liczbę powtórzeń w serii
+Każde ćwiczenie musi być oznaczone poziomem trudności (początkujący, średniozaawansowany, zaawansowany)
+
+Podpowiedzi:
+
+Id - użyj prostego typu całkowitego
+Nazwa i opis - użyj typu string
+Dla grupy mięśniowej stwórz enum z najpopularniejszymi grupami (np. Klatka, Plecy, Nogi, Ramiona, Brzuch)
+Liczba serii i powtórzeń - użyj typu całkowitego
+Dla poziomu trudności stwórz enum z trzema wartościami: Poczatkujacy, Srednio, Zaawansowany
+RetryClaude can make mistakes. Please double-check responses.
+
+
+-----------------------------------------------------------------------------------
+
+ps. Programiści nie trawią kodu po Polsku, więc nawet nie myśl o polskich nazwach
+ps2. Musisz zmienić dane otrzyname z pliku tekstowego, bo trochę pól przybyło
+ps3. Wypis i zapis też wymaga zmiany... co za męczarnia
