@@ -1,23 +1,11 @@
 Opis:
-Nazwy ćwiczeń to trochę mało. 
-Rozbuduj ćwiczenia, aby posiadało jeszcze informacje na temat ćwiczonej parti mięśniowej.
+Czas na interakcje z użytkownikiem.
+Teraz listę ćwiczeni dostaniemy od użytkownika.
 
 Wymagania:
-- Wypisz partie jakie mogą być treonowane 
-    np. 1 Plecy, 2 Nogi ... 
-- Użytkownik powinien podawać {nazwa};{number_partii}
-- wypisz na ekran w podany sposób
-{partia_1}
-- {partia_1_ćwiczenie_1}
-- {partia_1_ćwiczenie_2}
-{partia_2}
-- {partia_2_ćwiczenie_1}
-- {partia_2_ćwiczenie_2}
-{partia_3}
-{partia_4}
+- Dodaj polecenia czytelne dla użytkownika Console.WriteLine("...")
+- Pobieraj od użytkowniaka nazwę ćwiczenia i dodawaj ja do listy Console.ReadLine()
+- Gdy user wpisze exit skącz wprawadzanie ćwiczeń i wypisz je tak jak w zadaniu 3
 
 Podpowiedzi:
-- To czas na zabawy z klasami i enumem
-- Parsowanie stringów też się przyda
-
-ps. Pewnie nie wiesz co to znaczy parsowanie, więc musisz doczytać. 
+- Można to wykonać na wiele sposobów, jednak ja bym się tutaj pochylił nad pradawną techniką mistrzów while 

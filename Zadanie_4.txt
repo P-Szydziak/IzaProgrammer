@@ -1,11 +1,16 @@
 Opis:
-Czas na interakcje z użytkownikiem.
-Teraz listę ćwiczeni dostaniemy od użytkownika.
+Programista bez gita jak bez ręki.
+Pobierz repozytorium do siebie lokalnie za pomocą komendy git clone.
+Stwórz branch i wrzuć do niego projekt. Dodaj Git ignore i potem reszte projekty.
 
 Wymagania:
-- Dodaj polecenia czytelne dla użytkownika Console.WriteLine("...")
-- Pobieraj od użytkowniaka nazwę ćwiczenia i dodawaj ja do listy Console.ReadLine()
-- Gdy user wpisze exit skącz wprawadzanie ćwiczeń i wypisz je tak jak w zadaniu 3
+- Pobierz projekt za pomocą git clone
+- Stwórz własnego brancha za pomocą git brancha
+- Przejdź na swojego nowego brancha (doczytaj jak)
+- Wrzuć projekt do swojego brancha 
+- Dodaj git ignore, aby nie wrzucić zbędnych plików (znajdź git ignore dla Visual Studio z C# na internecie)
+- Dodaj najpierw commit z git ignore, a potem z resztą projektu
 
 Podpowiedzi:
-- Można to wykonać na wiele sposobów, jednak ja bym się tutaj pochylił nad pradawną techniką mistrzów while 
+- użyj link z HTTPS, bo SSH będzie na ten moment za ciężkie
+- kolejność commitów jest ważna!

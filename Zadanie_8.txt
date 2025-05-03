@@ -1,0 +1,15 @@
+Opis:
+Był odczyt więc mysi być i zapis 
+
+Wymagania:
+- Zapisz do pliku o nazwie ćwiczenia poukładane ćwiczenia i podanego pliku
+{partia_1}
+- {partia_1_ćwiczenie_1}
+- {partia_1_ćwiczenie_2}
+{partia_2}
+- {partia_2_ćwiczenie_1}
+- {partia_2_ćwiczenie_2}
+{partia_3}
+{partia_4}
+
+ps. Pamiętaj o ogórkach

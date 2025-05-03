@@ -1,0 +1,11 @@
+Opis:
+Jestem z Ciebie dumny. Skoro tutaj jesteś to już nie 1 godzinę spędziłaś z kodem. 
+Brakuje Ci zadań na Twoim branchu.
+Wykorzystaj git fetch i git rebase origin/main, aby pobrać nowe zadania. 
+Zobacz co się stanie po zrobieniu rebase. 
+
+Wymagania:
+- rabase brancha na top maina
+
+ps. Internet może być pomocny, w ostateczności Twój facet
+ps2. Skoro tutaj jesteś to pewnie jesteś już na Ty z Wujkiem Google

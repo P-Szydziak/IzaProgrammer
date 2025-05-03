@@ -1,15 +1,14 @@
 Opis:
-Był odczyt więc mysi być i zapis 
+Cieżko już podawać ćwiczenia z ręki. 
+Czas na progres i plik tekstowy. 
+Podaj plik tekstowy i pobierz z niego ćwiczenia wraz z trenowanymi partiami
+Wygląd pliku:
+{nazwa};{number_partii}
+{nazwa};{number_partii}
 
 Wymagania:
-- Zapisz do pliku o nazwie ćwiczenia poukładane ćwiczenia i podanego pliku
-{partia_1}
-- {partia_1_ćwiczenie_1}
-- {partia_1_ćwiczenie_2}
-{partia_2}
-- {partia_2_ćwiczenie_1}
-- {partia_2_ćwiczenie_2}
-{partia_3}
-{partia_4}
+- Pobierz z pliku ćwiczenia 
+- wypisz jak w ćwiczeniu 5
 
-ps. Pamiętaj o ogórkach
+Podpowiedzi:
+- To nie jest takie straszne https://letmegooglethat.com/?q=obs%C5%82uga+pliku+txt+c%23&l=1
