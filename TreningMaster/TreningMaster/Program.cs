@@ -6,7 +6,14 @@ namespace TreningMaster
 {
     internal class Program
     {
-        
+        enum MuscleParts
+        {
+            back = 1,
+            buttocks = 2,
+            thighs = 3,
+            calves = 4
+        }
+
         static void Main(string[] args)
         {
             List<string> exercises = ["Monster Walk", "Glute Bridge", "Arch hold"];// dodaniała Listt przed i nie wiem czy nie powinnam teraz zmienć nawiasów kwadratowych()
