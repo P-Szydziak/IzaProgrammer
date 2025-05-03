@@ -6,10 +6,29 @@ namespace TreningMaster
 {
     internal class Program
     {
-
+        
         static void Main(string[] args)
         {
             List<string> exercises = ["Monster Walk", "Glute Bridge", "Arch hold"];// dodaniała Listt przed i nie wiem czy nie powinnam teraz zmienć nawiasów kwadratowych()
+
+
+            ///////////////////////////////
+            Console.WriteLine("Dodaj nowe ćwiczenia:");
+            
+            while (true)
+            {
+
+                string userExercise = Console.ReadLine();
+                if (userExercise == "exit")
+                {
+                    
+                    break;
+                }
+
+                exercises.Add(userExercise);
+            }
+
+            ///////////////////////////////
 
             Console.WriteLine("Lista ćwiczeń na pośladki:");
             foreach (string exercise in exercises)
@@ -45,6 +64,9 @@ namespace TreningMaster
             {
                 Console.WriteLine("\t" + exercise);
             }
+
         }
+    
+
     }
 }
