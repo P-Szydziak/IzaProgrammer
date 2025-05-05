@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Collections.Immutable;
+using System.Text;
 using System.Threading;
 using System.Xml.Linq;
 
@@ -50,8 +51,6 @@ namespace TreningMaster
                 line = sr.ReadLine();
                 while (line != null)
                 {
-                    Console.WriteLine(line);
-
                     string[] parts = line.Split(';');
 
                     string name = parts[0];
@@ -72,7 +71,9 @@ namespace TreningMaster
                 Console.WriteLine("Koniec czytania pliku\n");
             }
 
-           
+
+
+
             //Console.WriteLine("Dodaj nowe ćwiczenia:");
 
             //while (true)
@@ -91,8 +92,35 @@ namespace TreningMaster
             //    exercises.Add(new Exercise { Name = name, MusclePart = musclePart });
             //}
 
+            try
+            {
+                //Open the File
+                StreamWriter sw = new StreamWriter(@"C:\Users\Izabella\Documents\Visual Studio 2022\Zadanie_output.txt", true, Encoding.ASCII);
+                foreach (MuscleParts part in Enum.GetValues(typeof(MuscleParts)))
+                {
+                    sw.WriteLine(part);
+                    foreach (var exercise in exercises)
+                    {
+                        if (exercise.MusclePart == part)
+                        {
+                            sw.WriteLine("\t" + exercise.Name);
+                        }
+                    }
+                }
 
-            
+                //close the file
+                sw.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception: " + e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Executing finally block.");
+            }
+
+
 
             Console.WriteLine("Lista ćwiczeń:");
             foreach (var exercise in exercises)
