@@ -1,0 +1,17 @@
+Opis:
+Twoja koleżanka Kasia notowała sobie daty na które ma plany. 
+Została zapytana, które z weekendów w przyszłości ma zajęte. 
+Pomórz Kasi sprawdzić, które z dat są w weekend i w przyszłości.
+
+Wymagania:
+
+Odczytak plik z datami Zadanie_11_daty.txt
+Odsortuj tylko te co są w przyszłości i w weekend (sobota lub niedziela)
+Zapisz wynik do pliku
+
+Podpowiedzi:
+
+Typ - DateTime
+-----------------------------------------------------------------------------------
+
+ps. Szcześliwi czasu nie liczą, ale programiści już muszą ;_;
