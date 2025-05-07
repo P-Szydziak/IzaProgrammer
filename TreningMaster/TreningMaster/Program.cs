@@ -13,6 +13,7 @@ namespace TreningMaster
         {
             public string Name { get; set; }
             public MuscleParts MusclePart { get; set; }
+
         }
         public enum MuscleParts
         {
@@ -24,25 +25,26 @@ namespace TreningMaster
 
         static void Main(string[] args)
         {
-            //Console.WriteLine("Dostępne partie mięśniowe:");
-            //foreach (MuscleParts part in Enum.GetValues(typeof(MuscleParts)))
-            //{
-            //    Console.WriteLine($"{(int)part} - {part}");
-            //}
+            Console.WriteLine("Dostępne partie mięśniowe:");
+            foreach (MuscleParts part in Enum.GetValues(typeof(MuscleParts)))
+            {
+                Console.WriteLine($"{(int)part} - {part}");
+            }
 
             List<Exercise> exercises = new List<Exercise>();
-            //{
-            //    new Exercise()
-            //    {
-            //        Name = "Monster Walk",
-            //        MusclePart = MuscleParts.back,
-            //    },
-            //     new Exercise()
-            //    {
-            //        Name = "Glute Bridge",
-            //        MusclePart = MuscleParts.back,
-            //    },
-            //};
+            {
+                new Exercise()
+                {
+                    Name = "Monster Walk",
+                    MusclePart = MuscleParts.back,
+                },
+                 new Exercise()
+                 {
+                     Name = "Glute Bridge",
+                     MusclePart = MuscleParts.back,
+                 },
+            }
+            ;
 
             string line;
             try
@@ -74,23 +76,23 @@ namespace TreningMaster
 
 
 
-            //Console.WriteLine("Dodaj nowe ćwiczenia:");
+            Console.WriteLine("Dodaj nowe ćwiczenia:");
 
-            //while (true)
-            //{
-            //    // {nazwa};{number_partii}
-            //    string input = Console.ReadLine();
-            //    if (input == "exit")
-            //    {
-            //        break;
-            //    }
-            //    string[] parts = input.Split(';');
+            while (true)
+            {
+                // {nazwa};{number_partii}
+                string input = Console.ReadLine();
+                if (input == "exit")
+                {
+                    break;
+                }
+                string[] parts = input.Split(';');
 
-            //    string name = parts[0];
-            //    MuscleParts musclePart = Enum.Parse<MuscleParts>(parts[1]);
+                string name = parts[0];
+                MuscleParts musclePart = Enum.Parse<MuscleParts>(parts[1]);
 
-            //    exercises.Add(new Exercise { Name = name, MusclePart = musclePart });
-            //}
+                exercises.Add(new Exercise { Name = name, MusclePart = musclePart });
+            }
 
             try
             {

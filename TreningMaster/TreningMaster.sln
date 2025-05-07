@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreningMaster", "TreningMaster\TreningMaster.csproj", "{8814A7D3-D011-4A39-B4C7-BFFEDD8B212E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadanie10", "Zadanie10\Zadanie10.csproj", "{83A58E4D-7146-478A-89F0-A3C0DF38C6FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{8814A7D3-D011-4A39-B4C7-BFFEDD8B212E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8814A7D3-D011-4A39-B4C7-BFFEDD8B212E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8814A7D3-D011-4A39-B4C7-BFFEDD8B212E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83A58E4D-7146-478A-89F0-A3C0DF38C6FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A58E4D-7146-478A-89F0-A3C0DF38C6FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A58E4D-7146-478A-89F0-A3C0DF38C6FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A58E4D-7146-478A-89F0-A3C0DF38C6FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
