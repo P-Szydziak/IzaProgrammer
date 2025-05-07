@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using static TreningMaster.Progrma;
 
 namespace TreningMaster
 {
@@ -80,7 +81,15 @@ namespace TreningMaster
                     {
                         if (exercise.MuscleParts == part)
                         {
-                            sw.WriteLine($"{exercise.Name};{exercise.Description};{exercise.MuscleParts};{exercise.DifficultyLevel};{exercise.NumberOfSeries};{exercise.NumberOfRepetitionsInTheSeries}");
+                            sw.WriteLine($""
+                               + $"\t  \n Name = {exercise.Name};" 
+                               + $"\t  \n Opis = {exercise.Description};" 
+                               + $"\t  \n Partia mięśniowa = {exercise.MuscleParts};"
+                               + $"\t  \n Poziom trudności = {exercise.DifficultyLevel};"
+                               + $"\t  \n Ilość serii = {exercise.NumberOfSeries};"
+                               + $"\t  \n Ilość powtórzeń w serii = {exercise.NumberOfRepetitionsInTheSeries}");
+
+
                         }
 
                     }
