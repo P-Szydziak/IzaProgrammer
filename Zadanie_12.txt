@@ -1,0 +1,22 @@
+Opis:
+Już jesteś gotowa na zabawę z plikami excel. 
+Stwórz nowy arkusz kalkulacyny (za pomocą programu).
+Zapisz w nim tabliczkę mnożenia do 100 według zasad
+Ax1 = 1
+Bx3 = 6
+Czyli A = 1 B = 2 itd
+Jx10 = 100
+
+Wymagania:
+- Stwórz plik o nazwie excel_traning
+- Stwórz w pliku nowy arkusz kalkulacyny o nazwie "multiplication table"
+- Wypełnij arkusz
+- zapisz plik 
+
+Podpowiedzi:
+- wykorzystaj Microsoft interop Excel 
+- https://medium.com/@sagarkumar2499/create-excel-in-c-b0ce30d1eaf9
+
+-----------------------------------------------------------------------------------
+
+ps. Jesteś już co raz bliżej

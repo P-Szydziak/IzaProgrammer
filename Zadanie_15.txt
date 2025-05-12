@@ -1,0 +1,17 @@
+Opis:
+Dodaj background cell color do skrajnych kolumn. 
+Czyli:
+Ax1-10
+A-Jx1
+itd
+Dodaj kolorek jaki Ci się podoba.
+
+Wymagania:
+- Otwórz plik o nazwie excel_traning
+- Edytuj arkusz kalkulacyny o nazwie "multiplication table"
+- zapisz plik 
+
+Podpowiedzi:
+- dokumentacja i internet
+
+-----------------------------------------------------------------------------------

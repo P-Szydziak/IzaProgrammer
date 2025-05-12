@@ -1,0 +1,13 @@
+Opis:
+Dodaj sumę w row 11. 
+Suma A(1:10), B(1:10)...
+
+Wymagania:
+- Otwórz plik o nazwie excel_traning
+- Edytuj arkusz kalkulacyny o nazwie "multiplication table"
+- zapisz plik 
+
+Podpowiedzi:
+- dokumentacja i internet
+
+-----------------------------------------------------------------------------------

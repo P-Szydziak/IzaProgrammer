@@ -1,0 +1,13 @@
+Opis:
+Obudź w sobie dziecko. 
+Otwórz plik za z zadania 12 za pomocą programu i pokoloruj wszystkie parzyste liczy na zielono (font color).
+
+Wymagania:
+- Otwórz plik o nazwie excel_traning
+- Edytuj arkusz kalkulacyny o nazwie "multiplication table"
+- zapisz plik 
+
+Podpowiedzi:
+- dokumentacja i internet
+
+-----------------------------------------------------------------------------------

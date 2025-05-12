@@ -1,0 +1,14 @@
+Opis:
+Dodaj do sumy z zadania 16 kolor czciąki, kolor kolumny, zrób kursywą i pogrubione.
+
+Wymagania:
+- Otwórz plik o nazwie excel_traning
+- Edytuj arkusz kalkulacyny o nazwie "multiplication table"
+- zapisz plik 
+
+Podpowiedzi:
+- dokumentacja i internet
+
+-----------------------------------------------------------------------------------
+
+ps. Jeśli tytaj jesteś to już formatowanie excela nie jest Ci straszne.
