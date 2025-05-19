@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.Common;
+using System.Drawing;
 using System.Text;
 using Microsoft.Office.Interop.Excel;
 
@@ -28,12 +29,37 @@ public class Program
 
             }
         }
+
+        Microsoft.Office.Interop.Excel.Range chartRange2;
+        chartRange2 = worksheet.get_Range("j1", "j10");
+        for (int i = 1; i <= 10; i++)
+        {
+            worksheet.Cells[1, i].Interior.Color = System.Drawing.Color.Pink;
+            worksheet.Cells[i, 1].Interior.Color = System.Drawing.Color.Pink;
+            worksheet.Cells[10, i].Interior.Color = System.Drawing.Color.Pink;
+            worksheet.Cells[i, 10].Interior.Color = System.Drawing.Color.Pink;
+
+            string Letter = ((char)('A' + i - 1)).ToString();
+            worksheet.Cells[11, i].Formula = $"=SUM({Letter}1:{Letter}10)";
+            
+        }
+        
+        Microsoft.Office.Interop.Excel.Range chartRange3;
+        chartRange3 = worksheet.get_Range("a10", "j10");
+        chartRange3.Font.Color = System.Drawing.Color.Red;
+
+        Microsoft.Office.Interop.Excel.Range chartRange4;
+        chartRange4 = worksheet.get_Range("a1", "j10");
+        foreach (Microsoft.Office.Interop.Excel.Range cell in chartRange4.Cells)
+        {
+            cell.BorderAround2();
+        }
+
         Microsoft.Office.Interop.Excel.Range chartRange;
         chartRange = worksheet.get_Range("a1", "j10");
-        foreach (Microsoft.Office.Interop.Excel.Range cell in chartRange.Cells)
-        {
-            chartRange.BorderAround2();
-        }
+        chartRange.BorderAround2(Weight: XlBorderWeight.xlThick);
+
+        
 
         // Save the workbook to a file
         workbook.SaveAs("Zadanie_12");
