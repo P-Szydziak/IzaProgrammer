@@ -41,9 +41,12 @@ public class Program
 
             string Letter = ((char)('A' + i - 1)).ToString();
             worksheet.Cells[11, i].Formula = $"=SUM({Letter}1:{Letter}10)";
-            
+            worksheet.Cells[11, i].Interior.Color = System.Drawing.Color.SandyBrown;
+            worksheet.Cells[11, i].Font.Color = System.Drawing.Color.MediumPurple;
+            worksheet.Cells[11, i].Font.Italic = true;
+            worksheet.Cells[11, i].Font.Bold = true;
         }
-        
+
         Microsoft.Office.Interop.Excel.Range chartRange3;
         chartRange3 = worksheet.get_Range("a10", "j10");
         chartRange3.Font.Color = System.Drawing.Color.Red;
