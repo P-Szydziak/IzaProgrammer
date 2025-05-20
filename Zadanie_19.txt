@@ -1,0 +1,30 @@
+Opis sytuacyjny:
+Minął tydzień w ING. Udało Ci się nie tylko zasymilować, ale nawet delikatnie rozbroić pogardliwy wzrok Rafała, kiedy zobaczył Twoje zastosowanie SRP.
+Ba! Powiedział: „Hmmm. Ciekawie...” – a to w jego ustach niemal wyznanie miłości. 😌
+
+Ale nie odpoczywaj za długo.
+
+W czasie daily Rafał rzuca (dosłownie i metaforycznie):
+„No fajnie, tylko niech kod nie będzie na sztywno na 10×10, co? Mamy 2025, nie 1997.”
+
+W jego słowniku to znaczy:
+„Zrób z tego coś rozszerzalnego. Najlepiej przyjmuj dane z zewnątrz. Skoro już poprawiłaś SRP, to może teraz pobawimy się z args w Main?”
+
+A Ty, z wdziękiem i uśmiechem, mówisz:
+„Nie ma problemu, Rafciu 😇”,
+po czym zerkasz na ChatGPT.
+
+✨ Twoje zadanie:
+Przekształć swój program tak, aby:
+- Odczytywał rozmiar tabliczki mnożenia z argumentu wiersza poleceń (args, czyli argv).
+Jeśli uruchomisz program z 5, ma stworzyć tablicę 5×5.
+Jeśli z 12, to 12×12.
+Jeśli nie podano nic – domyślnie generuj 10×10.
+- Nadal działał jak wcześniej – kolorował komórki, dodawał sumy itd.
+- Obsłuż sytuację, gdy użytkownik poda niedozwoloną wartość (np. -3 albo "abc"):
+Wypisz komunikat typu:
+Niepoprawny rozmiar tabliczki. Używam domyślnego rozmiaru 10.
+
+🪄 Dodatkowe czary (dla chętnej :D):
+Zamiast twardo wpisywać worksheet.Cells[row, col], zrób metodę SetValue(row, col, value) – przecież Rafał ma fetysz czystości kodu.
+Dodaj opcję --help, która wyświetli instrukcję działania programu.

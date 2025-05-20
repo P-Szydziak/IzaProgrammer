@@ -1,0 +1,18 @@
+Opis:
+Dzisiaj wyobrazimy sobie małą scenkę. 
+Dostałaś się do ING i poznałaś Rafała. 
+Rafał uważa się za guru programowania. 
+Rzuca słowami Fouler, SRP, Magic Values, ALB, EC2 niczym zaklęciami postacie z uniwersum HP (dla niego HP to Hewlett-Packard, nie Harry Potter).
+Chcesz się zasymilować i pozbyć się wzroku pogardy Rafała.
+Tu na szczeście z pomocą przychodzi Ci samolocik od koleżanki z biurka obok. 
+
+Pisze na nim:
+"
+Chat GPT Ci się przyda, bo mało masz czasu.
+Napisz mu:
+1. Popraw kod, aby nie łamał zasady SRP i wytłumacz co to za zasada. - Podaj mu kod.
+2. Czy mogę jeszcze jakoś zwiększyć czytelność kodu? Nie interesuje mnie na ten moment wydajność.
+3. 
+"
+
+Zrób to lepiej zanim Rafał spojrzy na Twój code na CR (Code review)
