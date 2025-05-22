@@ -39,7 +39,7 @@ public class Program
             worksheet.Cells[10, i].Interior.Color = System.Drawing.Color.Pink;
             worksheet.Cells[i, 10].Interior.Color = System.Drawing.Color.Pink;
 
-            string Letter = ((char)('A' + i - 1)).ToString();
+            string Letter = ((char)('A' + i - 1)).ToString(); //Ustawienie "A" jako pierwszej kolumny i zmiana tego na string - char
             worksheet.Cells[11, i].Formula = $"=SUM({Letter}1:{Letter}10)";
             worksheet.Cells[11, i].Interior.Color = System.Drawing.Color.SandyBrown;
             worksheet.Cells[11, i].Font.Color = System.Drawing.Color.MediumPurple;
