@@ -1,0 +1,48 @@
+Opis sytuacyjny:
+Twój wykres zrobił furorę! Marcin pokazał go nawet na board meeting, a Rafał... Rafał powiedział: "Elegancko."
+W jego słowniku to oznacza niemalże standing ovation.
+Ale sukces rodzi nowe wyzwania...
+Na daily Anka z działu fitness (bo pamiętaj, w końcu aplikacja nazywa się TrainingMaster!) podchodzi i mówi:
+"Super ta tabliczka mnożenia, ale czy mogłabyś dodać prawdziwe dane treningowe? Mamy klientów, którzy chcą śledzić swoje postępy."
+Rafał natychmiast włącza się:
+"Tak, i każdy typ danych w osobnym arkuszu. Separation of concerns, nie mieszamy gruszek z jabłkami."
+Ty kimuasz głową, bo już wiesz, że to będzie kolejna przygoda z Excel... 📋
+✨ Twoje zadanie:
+Rozszerz swój istniejący plik excel_traning o funkcjonalność zarządzania wieloma arkuszami:
+
+Stwórz nowy arkusz "Training Plans" zawierający:
+
+Kolumny: Plan Name, Duration (weeks), Difficulty Level, Target Muscle Groups
+Dodaj 5 przykładowych planów treningowych (hard-coded)
+Sformatuj nagłówki (bold, background color)
+
+
+Stwórz nowy arkusz "Client Progress" zawierający:
+
+Kolumny: Client Name, Date, Exercise, Weight (kg), Reps, Sets
+Dodaj 10 przykładowych wpisów (hard-coded)
+Posortuj dane po dacie (najnowsze pierwsze)
+
+
+Dodaj arkusz "Summary" który będzie zawierał:
+
+Listę wszystkich arkuszy w pliku
+Liczbę wierszy z danymi w każdym arkuszu
+Datę ostatniej modyfikacji
+
+Wymagania:
+
+Zachowaj istniejące arkusze ("multiplication table", "Charts")
+Każdy arkusz ma mieć odpowiednie formatowanie
+Dane mają być czytelne i profesjonalnie wyglądające
+
+Podpowiedzi:
+
+worksheet.Name pozwala ustawić nazwę arkusza
+workbook.Worksheets.Add() tworzy nowy arkusz
+Range.Sort() pomoże z sortowaniem
+DateTime.Now dla dat
+
+
+ps. Multi-sheet Excel to podstawa każdego business reportu
+ps2. Jeśli Anka będzie zadowolona, może dostaniesz darmowy karnet na siłownię 💪

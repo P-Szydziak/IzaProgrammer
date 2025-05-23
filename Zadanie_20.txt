@@ -1,0 +1,35 @@
+Opis sytuacyjny:
+Przeszedł kolejny tydzień w ING. Rafał już nie tylko nie patrzy na Cię z pogardą, ale nawet skinął głową z aprobatą, gdy zobaczył Twoje args w Main().
+Możesz powiedzieć, że jesteś już oficjalnie w klubie "Tych co nie piszą spaghetti code".
+Ale spokój nie trwa długo...
+Podczas retrospektywy team lead Marcin mówi:
+"Fajnie, ale biznes potrzebuje wizualizacji. Nie każdy umie czytać liczby w Excel jak programista. Czy mogłabyś dodać jakiś wykres?"
+Rafał od razu dodaje:
+"Tak, i niech to nie będzie żaden placeholder. Ma być ładny wykres, który customer journey manager będzie mógł pokazać na prezentacji."
+Ty uśmiechasz się słodko i myślisz:
+"Excel chart? Piece of cake! 🍰"
+
+✨ Twoje zadanie:
+Rozszerz swój program o generowanie wykresu:
+
+Otwórz istniejący plik excel_traning
+Dodaj nowy arkusz o nazwie "Charts"
+Stwórz wykres kolumnowy (Column Chart) przedstawiający sumy z każdej kolumny tabliczki mnożenia
+Wykres powinien mieć:
+
+Tytuł: "Sumy kolumn - Tabliczka mnożenia"
+Opis osi X: "Kolumny (A-J)"
+Opis osi Y: "Suma wartości"
+
+
+Umieść wykres tak, żeby nie nakładał się na dane
+
+Podpowiedzi:
+
+Microsoft.Office.Interop.Excel ma klasy Chart i ChartObjects
+Dane do wykresu pobierz z arkusza "multiplication table" z wiersza z sumami
+https://docs.microsoft.com/en-us/office/vba/api/excel.chart
+
+
+ps. Wykresy to podstawa prezentacji w korpo. Wkrótce będziesz robiła slajdy jak prawdziwy consultant 📊
+ps2. Jeśli wykres będzie brzydki, Rafał tego nie przeżyje

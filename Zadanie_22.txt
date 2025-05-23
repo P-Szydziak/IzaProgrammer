@@ -1,0 +1,54 @@
+Opis sytuacyjny:
+Minął kolejny tydzień i Twoja aplikacja TrainingMaster staje się legendą w biurze. Nawet ludzie z innych działów pytają: "Kto to zrobił ten Excel z treningami?"
+Anka z fitness jest zachwycona, ale ma kolejną prośbę:
+"Czy mogłabyś zrobić tak, żeby od razu było widać, które wyniki są dobre, a które słabe? Żeby nie trzeba było myśleć, tylko spojrzeć i wiedzieć."
+Rafał, jak zwykle, ma swoją opinię:
+"Conditional formatting. To podstawa business intelligence. Kolor = informacja. Red flags mają być czerwone, green lights zielone."
+Ty już wiesz, że czeka Cię zabawa z kolorkami, ale tym razem inteligentnymi kolorkami! 🎨
+✨ Twoje zadanie:
+Dodaj formatowanie warunkowe do arkusza "Client Progress" w pliku excel_traning:
+
+Dla kolumny Weight (kg):
+
+Zielony: wartości powyżej 75kg
+Żółty: wartości między 40kg a 75kg
+Czerwony: wartości poniżej 40kg
+
+
+Dla kolumny Reps:
+
+Zielony: 12 i więcej powtórzeń
+Żółty: 8-11 powtórzeń
+Czerwony: poniżej 8 powtórzeń
+
+
+Dla kolumny Sets:
+
+Zastosuj gradient kolorów od czerwonego (1 seria) do zielonego (5+ serii)
+
+
+Dodaj legendę w arkuszu "Summary":
+
+Wytłumacz co oznaczają kolory
+Dodaj przykładowe komórki z kolorami dla każdego przypadku
+
+
+Bonus: Dodaj Data Bars do kolumny Weight dla lepszej wizualizacji
+
+Wymagania:
+
+Użyj FormatConditions w Excel Interop
+Kolory mają być wyraźne i profesjonalne
+Legenda ma być czytelna i przydatna
+
+Podpowiedzi:
+
+Range.FormatConditions.Add() to Twój przyjaciel
+xlCellValue, xlGreater, xlLess do porównań
+ColorIndex lub RGB dla kolorów
+https://docs.microsoft.com/en-us/office/vba/api/excel.formatconditions
+
+
+ps. Conditional formatting to sztuka. Dobrze zrobione, ułatwia życie. Źle zrobione, wygląda jak tęcza po burzy 🌈
+ps2. Jeśli to zadanie wykonasz dobrze, będziesz gotowa na prawdziwe corporate reporting!
+ps3. Gratulacje! Dotarłaś do zadania 22. To już nie jest przypadek - to determinacja prawdziwego wojownika kodu! ⚔️
