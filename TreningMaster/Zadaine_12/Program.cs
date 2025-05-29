@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using Microsoft.Office.Interop.Excel;
 using Range = Microsoft.Office.Interop.Excel.Range;
 
@@ -24,6 +25,7 @@ public class Program
         HighlightBordersAndHeaders(worksheet, size);
         AddSumFormulas(worksheet, size);
         FormatBorders(worksheet, size);
+        AddChart(worksheet, size);
 
         // Save the workbook to a file
         workbook.SaveAs("Zadanie_12");
@@ -54,15 +56,14 @@ public class Program
                 {
                     worksheet.Cells[row, column].Font.Color = Color.Green;
                 }
-
             }
         }
     }
 
-    
+
     static void HighlightBordersAndHeaders(Worksheet worksheet, int size)
-    { 
-       
+    {
+
         for (int i = 1; i <= size; i++)
         {
             worksheet.Cells[1, i].Interior.Color = Color.Pink;
@@ -79,13 +80,13 @@ public class Program
         for (int i = 1; i <= size; i++)
         {
             string Letter = ((char)('A' + i - 1)).ToString(); //Ustawienie "A" jako pierwszej kolumny i zmiana tego na string - char
-            worksheet.Cells[11, i].Formula = $"=SUM({Letter}1:{Letter}10)";
-            worksheet.Cells[11, i].Interior.Color = Color.SandyBrown;
-            worksheet.Cells[11, i].Font.Color = Color.MediumPurple;
-            worksheet.Cells[11, i].Font.Italic = true;
-            worksheet.Cells[11, i].Font.Bold = true;
+            worksheet.Cells[size + 1, i].Formula = $"=SUM({Letter}1:{Letter}{size})";
+            worksheet.Cells[size + 1, i].Interior.Color = Color.SandyBrown;
+            worksheet.Cells[size + 1, i].Font.Color = Color.MediumPurple;
+            worksheet.Cells[size + 1, i].Font.Italic = true;
+            worksheet.Cells[size + 1, i].Font.Bold = true;
+            worksheet.Cells[size + 1, i].Font.Bold = true;
         }
-      
     }
 
 
@@ -98,8 +99,26 @@ public class Program
         }
 
         fullRange.BorderAround2(Weight: XlBorderWeight.xlThick);
+
     }
 
+
+    static void AddChart(Worksheet worksheet, int size)
+    {
+        var range = worksheet.get_Range($"A{size + 1}", $"{ToExcelColumn(size)}{size + 1}");
+
+        var charts = worksheet.ChartObjects() as ChartObjects;
+        var chartObject = charts.Add(range.Left, range.Top + range.Height + 10, 300, 300);
+        var chart = chartObject.Chart;
+
+        chart.SetSourceData(range);
+
+        chart.ChartType = XlChartType.xlLine;
+        chart.ChartWizard(Source: range,
+            Title: "Sumy kolumn - Tabliczka mnożenia",
+            CategoryTitle: "Kolumny",
+            ValueTitle: "Suma wartości");
+    }
 
     static string ToExcelColumn(int columnNumber)
     {
