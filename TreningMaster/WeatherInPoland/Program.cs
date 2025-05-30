@@ -17,48 +17,73 @@ chromeOptions.AddArguments("--headless=new");
 var driver = new ChromeDriver(chromeOptions);
 var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
 
-//driver.Navigate().GoToUrl("https://gist.github.com/kqf/782e04ee4b526d266ad8b0452a9f20bc");
 
-//IWebElement table_tbody = wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector("#file-poland-csv > div.Box-body.p-0.blob-wrapper.data.type-csv.gist-border-0 > div.markdown-body > table > tbody")));
+driver.Navigate().GoToUrl("https://gist.github.com/kqf/782e04ee4b526d266ad8b0452a9f20bc");
 
-//IList<IWebElement> tbody_trs = table_tbody.FindElements(By.TagName("tr"));
+IWebElement table_tbody = wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector("#file-poland-csv > div.Box-body.p-0.blob-wrapper.data.type-csv.gist-border-0 > div.markdown-body > table > tbody")));
 
-//var cities = new List<string>();
+IList<IWebElement> tbody_trs = table_tbody.FindElements(By.TagName("tr"));
 
-//foreach (var row in tbody_trs)
-//{
-//    IList<IWebElement> tds = row.FindElements(By.TagName("td"));
+var cities = new List<string>();
 
-//    cities.Add(tds[1].Text); 
-//}
+foreach (var row in tbody_trs)
+{
+    IList<IWebElement> tds = row.FindElements(By.TagName("td"));
+    cities.Add(tds[1].Text);
+}
 
-driver.Navigate().GoToUrl("https://pogoda.interia.pl/");
+for (int i = 0; i < cities.Count; i++)
+{
+    string temperature;
+    if (i == 0)
+    {
+        temperature = GetWeather(driver, wait, cities[i], true);
+    }
+    else
+    {
+        temperature = GetWeather(driver, wait, cities[i], false);
+    }
 
-// Wait for the RODO popup button to be visible and clickable
-var agreeButton = wait.Until(ExpectedConditions.ElementToBeClickable(
-    By.CssSelector("button.rodo-popup-agree.rodo-popup-main-agree")
-));
+    Console.WriteLine($"{cities[i]} - {temperature}");
+}
 
-// Click the “Przejdź do serwisu” button
-agreeButton.Click();
+// -------------- metoda
 
-var input = wait.Until(ExpectedConditions.ElementIsVisible(By.Id("weather-currently-input-text-1")));
-input.Click();
+static string GetWeather(ChromeDriver driver, WebDriverWait wait, string city_name, bool checkForRodo)
+{
+    driver.Navigate().GoToUrl("https://pogoda.interia.pl/");
 
-// Clear and enter a value
-input.Clear();
-input.SendKeys($"Warszawa");
-// input.SendKeys($"{cities[0]}");
+    if (checkForRodo)
+    {
+        // Wait for the RODO popup button to be visible and clickable
+        var agreeButton = wait.Until(ExpectedConditions.ElementToBeClickable(
+            By.CssSelector("button.rodo-popup-agree.rodo-popup-main-agree")
+        ));
 
-var dropdown = wait.Until(ExpectedConditions
-    .ElementIsVisible(By.CssSelector(".suggest-city-result:not(.hidden)")));
+        // Click the “Przejdź do serwisu” button
+        agreeButton.Click();
+    }
 
-var firstSuggestion = dropdown.FindElement(By.CssSelector("li:first-child a"));
-firstSuggestion.Click();
+    var input = wait.Until(ExpectedConditions.ElementIsVisible(By.Id("weather-currently-input-text-1")));
+    input.Click();
 
-var weather_elem = wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector("#weather-currently > div.weather-currently-middle > div.weather-currently-middle-today-wrapper > div > div.weather-currently-temp")));
+    // Clear and enter a value
+    input.Clear();
+    input.SendKeys(city_name);
 
-Console.WriteLine(weather_elem.Text);
+    var dropdown = wait.Until(ExpectedConditions
+        .ElementIsVisible(By.CssSelector(".suggest-city-result:not(.hidden)")));
+
+    var firstSuggestion = dropdown.FindElement(By.CssSelector("li:first-child a"));
+    firstSuggestion.Click();
+
+    var weather_elem = wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector("#weather-currently > div.weather-currently-middle > div.weather-currently-middle-today-wrapper > div > div.weather-currently-temp")));
+
+    return weather_elem.Text;
+}
+
+//--------------------------
+
 // Save the workbook to a file
 workbook.SaveAs("Pogoda_excel_selenium");
 // Close the workbook and Excel application
