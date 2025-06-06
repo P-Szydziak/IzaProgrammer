@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadaine_12", "Zadaine_12\Za
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherInPoland", "WeatherInPoland\WeatherInPoland.csproj", "{87FE814D-C376-42B7-B454-AE88DD475F4C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Przed_Rekrutacją", "Przed_Rekrutacją\Przed_Rekrutacją.csproj", "{9B27E421-4C6E-44EB-9930-FCF2B3F8D68F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waluty_z_excel", "Waluty_z_excel\Waluty_z_excel.csproj", "{D36CB4B6-3042-4F15-8CA7-26921C62E9F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{87FE814D-C376-42B7-B454-AE88DD475F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87FE814D-C376-42B7-B454-AE88DD475F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87FE814D-C376-42B7-B454-AE88DD475F4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B27E421-4C6E-44EB-9930-FCF2B3F8D68F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B27E421-4C6E-44EB-9930-FCF2B3F8D68F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B27E421-4C6E-44EB-9930-FCF2B3F8D68F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B27E421-4C6E-44EB-9930-FCF2B3F8D68F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D36CB4B6-3042-4F15-8CA7-26921C62E9F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D36CB4B6-3042-4F15-8CA7-26921C62E9F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D36CB4B6-3042-4F15-8CA7-26921C62E9F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D36CB4B6-3042-4F15-8CA7-26921C62E9F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
